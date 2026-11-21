@@ -1,0 +1,196 @@
+/* Global styles */
+
+* {
+  box-sizing: border-box;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+color: #172033;
+background: #ffffff;
+}
+
+#root {
+min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+z-index: 1000;
+}
+
+.navbar-brand {
+letter-spacing: 0.5px;
+}
+
+/* Hero section */
+.hero-section {
+padding: 100px 0;
+min-height: 500px;
+background: linear-gradient(135deg, #101827 0%, #173b68 100%);
+overflow: hidden;
+}
+
+.hero-section h1 {
+color: #ffffff !important;
+line-height: 1.2;
+}
+
+.hero-section p {
+color: #e2e8f0 !important;
+}
+
+.hero-section .text-info {
+color: #22d3ee !important;
+}
+
+.hero-section .badge {
+background-color: #22d3ee !important;
+color: #101827 !important;
+}
+
+.hero-section .btn-info {
+background-color: #22d3ee;
+border-color: #22d3ee;
+color: #101827;
+}
+
+.hero-section .btn-info:hover {
+background-color: #67e8f9;
+border-color: #67e8f9;
+}
+
+.hero-card {
+padding: 35px;
+border: 1px solid rgba(255, 255, 255, 0.2);
+border-radius: 24px;
+background: rgba(255, 255, 255, 0.08);
+box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+color: #ffffff;
+}
+
+.hero-card h3 {
+color: #ffffff;
+}
+
+.hero-icon {
+font-size: 80px;
+color: #22d3ee;
+}
+
+.code-box {
+margin-top: 25px;
+padding: 22px;
+border-radius: 12px;
+background: #0b1220;
+color: #ffffff;
+line-height: 2;
+font-family: monospace;
+}
+
+/* Section headings */
+.section-label {
+color: #087ea4;
+font-weight: 700;
+letter-spacing: 2px;
+font-size: 13px;
+}
+
+/* Course cards */
+.course-card {
+border: 1px solid #e5eaf0;
+border-radius: 18px;
+background: #ffffff;
+transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.course-card:hover {
+transform: translateY(-7px);
+box-shadow: 0 16px 35px rgba(25, 55, 90, 0.12);
+}
+
+.course-icon {
+width: 58px;
+height: 58px;
+display: flex;
+align-items: center;
+justify-content: center;
+background: #e5f8fd;
+color: #087ea4;
+border-radius: 14px;
+font-size: 28px;
+}
+
+/* About section */
+.about-section {
+background: #f5f8fc;
+}
+
+.about-text {
+max-width: 750px;
+line-height: 1.8;
+}
+
+/* Footer */
+footer {
+margin-top: 20px;
+}
+
+/* Login and register */
+.auth-wrapper {
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 40px 16px;
+background: linear-gradient(135deg, #101827, #173b68);
+}
+
+.auth-card {
+width: 100%;
+max-width: 480px;
+padding: 35px;
+background: #ffffff;
+border-radius: 20px;
+box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.auth-icon {
+font-size: 48px;
+color: #087ea4;
+}
+
+.auth-card .form-control {
+padding: 12px;
+border-radius: 10px;
+}
+
+.auth-card .btn {
+border-radius: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 767px) {
+.hero-section {
+padding: 65px 0;
+}
+
+.hero-section h1 {
+font-size: 2.5rem;
+}
+
+.hero-card {
+padding: 25px;
+}
+}
+
+@media (max-width: 480px) {
+.auth-card {
+padding: 24px 18px;
+}
+}

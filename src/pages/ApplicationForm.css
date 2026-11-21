@@ -1,0 +1,844 @@
+
+/* ================================
+   APPLICATION PAGE
+================================ */
+
+.application-page {
+  min-height: 80vh;
+  padding: 65px 20px;
+  background: #f5f7fc;
+  color: #172033;
+}
+
+.application-container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.application-heading {
+  max-width: 720px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.application-eyebrow {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.application-heading h1 {
+  margin: 0 0 16px;
+  color: #111827;
+  font-size: clamp(30px, 5vw, 46px);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.application-heading h1 span {
+  color: #2563eb;
+}
+
+.application-heading > p {
+  max-width: 620px;
+  margin: 0 auto;
+  color: #64748b;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* ================================
+   MAIN LAYOUT
+================================ */
+
+.application-layout {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  align-items: stretch;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.07);
+}
+
+/* ================================
+   LEFT INFORMATION PANEL
+================================ */
+
+.application-info {
+  display: flex;
+  flex-direction: column;
+  padding: 42px 34px;
+  color: #ffffff;
+  background: #101d3b;
+}
+
+.info-brand-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 62px;
+  margin-bottom: 30px;
+  color: #ffffff;
+  background: #2563eb;
+  border-radius: 18px;
+  font-size: 30px;
+}
+
+.application-info h2 {
+  margin: 0 0 16px;
+  color: #ffffff;
+  font-size: clamp(27px, 3vw, 36px);
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.application-info > p {
+  margin-bottom: 32px;
+  color: #cbd5e1;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.info-feature {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  margin-bottom: 26px;
+}
+
+.info-feature > i {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  color: #93c5fd;
+  background: rgba(255, 255, 255, 0.09);
+  border-radius: 12px;
+  font-size: 21px;
+}
+
+.info-feature h4 {
+  margin: 2px 0 6px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.info-feature p {
+  margin: 0;
+  color: #cbd5e1;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.info-bottom {
+  margin-top: auto;
+  padding-top: 24px;
+  color: #cbd5e1;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+/* ================================
+   FORM CARD
+================================ */
+
+.application-form-card {
+  min-width: 0;
+  padding: 42px;
+  background: #ffffff;
+}
+
+.form-card-heading {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.form-heading-icon {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  color: #2563eb;
+  background: #eff6ff;
+  border-radius: 15px;
+  font-size: 25px;
+}
+
+.form-card-heading h2 {
+  margin: 0 0 6px;
+  color: #111827;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.form-card-heading p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* ================================
+   FORM SECTIONS
+================================ */
+
+.form-section-title {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin: 28px 0 20px;
+  padding-bottom: 13px;
+  color: #1e293b;
+  border-bottom: 1px solid #e5eaf2;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.form-section-title:first-of-type {
+  margin-top: 0;
+}
+
+.form-section-title span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  color: #2563eb;
+  background: #eff6ff;
+  border-radius: 9px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.application-field {
+  min-width: 0;
+  margin-bottom: 21px;
+}
+
+.application-field label {
+  display: block;
+  margin-bottom: 9px;
+  color: #334155;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.application-field label > span:first-child {
+  color: #dc2626;
+}
+
+.application-field label .optional-label {
+  color: #94a3b8;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.input-with-icon,
+.select-with-icon {
+  position: relative;
+}
+
+.input-with-icon > i,
+.select-with-icon > i {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  z-index: 1;
+  color: #94a3b8;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+.input-with-icon input,
+.select-with-icon select,
+.application-field textarea {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  padding: 13px 14px;
+  color: #1e293b;
+  background: #ffffff;
+  border: 1px solid #dbe2ec;
+  border-radius: 11px;
+  outline: none;
+  font-family: inherit;
+  font-size: 14px;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.input-with-icon input,
+.select-with-icon select {
+  padding-left: 44px;
+  min-height: 49px;
+}
+
+.select-with-icon select {
+  cursor: pointer;
+}
+
+.input-with-icon input::placeholder,
+.application-field textarea::placeholder {
+  color: #a0aabc;
+}
+
+.input-with-icon input:focus,
+.select-with-icon select:focus,
+.application-field textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.12);
+}
+
+.select-with-icon select:disabled {
+  background: #f1f5f9;
+  cursor: not-allowed;
+}
+
+.application-field textarea {
+  min-height: 120px;
+  resize: vertical;
+  line-height: 1.7;
+}
+
+.form-two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.field-help {
+  display: block;
+  margin-top: 8px;
+  color: #dc2626;
+  line-height: 1.6;
+}
+
+/* ================================
+   ERRORS AND NOTES
+================================ */
+
+.application-error {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 24px;
+  padding: 15px;
+  color: #991b1b;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 12px;
+}
+
+.application-error > i {
+  margin-top: 2px;
+  font-size: 19px;
+}
+
+.application-error strong {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.application-error p {
+  margin: 0;
+  overflow-wrap: anywhere;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.form-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  margin: 8px 0 22px;
+  padding: 14px;
+  color: #475569;
+  background: #f8fafc;
+  border-radius: 10px;
+}
+
+.form-note > i {
+  margin-top: 2px;
+  color: #2563eb;
+  font-size: 17px;
+}
+
+.form-note p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+/* ================================
+   SUBMIT BUTTON
+================================ */
+
+.application-submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  min-height: 54px;
+  padding: 14px 20px;
+  color: #ffffff;
+  background: #2563eb;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.application-submit-btn:hover:not(:disabled) {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.application-submit-btn:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 3px;
+}
+
+.application-submit-btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.secure-note {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  margin: 14px 0 0;
+  color: #64748b;
+  font-size: 11px;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.secure-note i {
+  color: #16a34a;
+}
+
+.form-back-link {
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid #e5eaf2;
+  text-align: center;
+}
+
+.form-back-link a {
+  color: #475569;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.form-back-link a:hover {
+  color: #2563eb;
+}
+
+.form-back-link i {
+  margin-right: 8px;
+}
+
+/* ================================
+   LOADING SCREEN
+================================ */
+
+.application-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 350px;
+  gap: 18px;
+}
+
+.application-loading p {
+  margin: 0;
+  color: #64748b;
+  font-size: 15px;
+}
+
+/* ================================
+   SUCCESS SCREEN
+================================ */
+
+.registration-success {
+  max-width: 690px;
+  margin: 20px auto;
+  padding: 45px;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 25px;
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.08);
+}
+
+.success-animation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 88px;
+  height: 88px;
+  margin: 0 auto 22px;
+  color: #15803d;
+  background: #dcfce7;
+  border: 8px solid #f0fdf4;
+  border-radius: 50%;
+  font-size: 43px;
+  animation: success-pop 0.45s ease-out;
+}
+
+@keyframes success-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.65);
+  }
+
+  75% {
+    transform: scale(1.08);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.success-badge {
+  display: inline-block;
+  padding: 8px 14px;
+  color: #15803d;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 30px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+}
+
+.registration-success > h1 {
+  margin: 20px 0 12px;
+  color: #15803d;
+  font-size: clamp(27px, 5vw, 38px);
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.registration-success > h3 {
+  margin: 0;
+  color: #1e293b;
+  font-size: 20px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.success-description {
+  max-width: 510px;
+  margin: 18px auto 25px;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.submitted-course {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  text-align: left;
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  border-radius: 15px;
+}
+
+.course-icon {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  color: #2563eb;
+  background: #ffffff;
+  border-radius: 13px;
+  font-size: 24px;
+}
+
+.submitted-course span {
+  display: block;
+  margin-bottom: 6px;
+  color: #64748b;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.submitted-course h4 {
+  margin: 0;
+  color: #1e3a8a;
+  font-size: 17px;
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+
+.next-step-box {
+  display: flex;
+  gap: 14px;
+  margin-top: 20px;
+  padding: 22px;
+  text-align: left;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 15px;
+}
+
+.next-step-icon {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  color: #2563eb;
+  background: #dbeafe;
+  border-radius: 12px;
+  font-size: 20px;
+}
+
+.next-step-box h4 {
+  margin: 2px 0 9px;
+  color: #1e293b;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.next-step-box p {
+  margin-bottom: 10px;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.next-step-box p:last-child {
+  color: #1d4ed8;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.success-footer {
+  margin-top: 25px;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.success-footer i {
+  color: #ef4444;
+}
+
+.success-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 19px;
+  margin-top: 27px;
+}
+
+.success-home-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  padding: 13px 25px;
+  color: #ffffff;
+  background: #2563eb;
+  border-radius: 11px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.success-home-btn:hover {
+  color: #ffffff;
+  background: #1d4ed8;
+}
+
+.success-courses-link {
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.success-courses-link:hover {
+  text-decoration: underline;
+}
+
+.success-brand {
+  margin: 32px 0 0;
+  padding-top: 20px;
+  color: #94a3b8;
+  border-top: 1px solid #e2e8f0;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 900px) {
+  .application-page {
+    padding: 45px 18px;
+  }
+
+  .application-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .application-info {
+    padding: 32px;
+  }
+
+  .application-info h2 {
+    font-size: 30px;
+  }
+
+  .application-info > p {
+    max-width: 550px;
+  }
+
+  .info-bottom {
+    margin-top: 5px;
+  }
+
+  .application-form-card {
+    padding: 32px;
+  }
+}
+
+@media (max-width: 576px) {
+  .application-page {
+    padding: 30px 12px;
+  }
+
+  .application-heading {
+    margin-bottom: 28px;
+  }
+
+  .application-heading h1 {
+    font-size: 31px;
+  }
+
+  .application-heading > p {
+    font-size: 14px;
+  }
+
+  .application-info {
+    padding: 28px 22px;
+  }
+
+  .info-brand-icon {
+    width: 54px;
+    height: 54px;
+    margin-bottom: 22px;
+  }
+
+  .application-info h2 {
+    font-size: 28px;
+  }
+
+  .application-form-card {
+    padding: 25px 18px;
+  }
+
+  .form-card-heading {
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .form-card-heading h2 {
+    font-size: 21px;
+  }
+
+  .form-two-columns {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .registration-success {
+    margin: 5px auto;
+    padding: 30px 19px;
+    border-radius: 20px;
+  }
+
+  .success-animation {
+    width: 76px;
+    height: 76px;
+    font-size: 36px;
+  }
+
+  .registration-success > h3 {
+    font-size: 18px;
+  }
+
+  .submitted-course {
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .submitted-course h4 {
+    font-size: 15px;
+  }
+
+  .next-step-box {
+    gap: 11px;
+    padding: 17px 14px;
+  }
+
+  .next-step-icon {
+    width: 38px;
+    height: 38px;
+    font-size: 17px;
+  }
+
+  .next-step-box h4 {
+    font-size: 15px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .success-animation {
+    animation: none;
+  }
+
+  .application-submit-btn {
+    transition: none;
+  }
+}
