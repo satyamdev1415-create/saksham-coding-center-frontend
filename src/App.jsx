@@ -40,7 +40,7 @@ function App() {
             <Route path="/admin/courses" element={<AdminCourses/>}/>
             <Route path="/admin/faculty" element={<AdminFaculty/>}/>
             <Route path="/admin/applications" element={<AdminApplications/>}/>
-            <Route path="//admin/contact-messages" element={<ContactMessages/>}/>
+            <Route path="/admin/contact-messages" element={<ContactMessages/>}/>
 
             <Route path="/admin/students" element={<AdminStudents/>}/>
         </Route>
